@@ -1,5 +1,3 @@
-The perfectly preserved remains of a once ambitious and active project.
+It's time we finished this thing.
 
-It died up due to poor communication between team members and general lack of enthusiasm.
-
-Soon.
+Picking up right where we left off.
