@@ -1,10 +1,10 @@
 "GameInfo"
 {
-	game		"Not-Life 3 Development Build"
+	game		"Not-Life 3 Reborn Development Build"
 	title		" "
 	title2		" "
 
-	developer	"AndroSoft"
+	developer	"Combine"
 	developer_url	"Coming Soon"
 	type		"singleplayer_only"
 
@@ -18,18 +18,38 @@
 		"test_hardware" 0
 	}
 
-	FileSystem
-	{
-		SteamAppId 218
-		ToolsAppId 211
+            FileSystem
+            {
+                    SteamAppId                              420             
+                   
 
-		SearchPaths
-		{
-			Game |gameinfo_path|.
-			Game hl2
-			Game ep1
-			Game ep2
-			Game episodic
-		}
-	}
+                    SearchPaths
+                    {
+                            game+mod                        |gameinfo_path|.
+                            platform                        |gameinfo_path|.
+     
+                            game_lv                         hl2/hl2_lv.vpk
+                            game+mod                        ep2/ep2_english.vpk
+                            game+mod                        ep2/ep2_pak.vpk
+                            game                            |all_source_engine_paths|episodic/ep1_english.vpk
+                            game                            |all_source_engine_paths|episodic/ep1_pak.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_english.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_pak.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_textures.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_sound_misc.vpk
+                            game                            |all_source_engine_paths|hl2/hl2_misc.vpk
+                            platform                        |all_source_engine_paths|platform/platform_misc.vpk
+     
+                            mod+mod_write+default_write_path                |gameinfo_path|.
+     
+                            game+game_write                 |gameinfo_path|.
+     
+                            gamebin                         episodic/bin
+     
+                             game                            |all_source_engine_paths|episodic
+                            game                            |all_source_engine_paths|hl2
+                            platform                        |all_source_engine_paths|platform
+                    }
+            }
 }
